@@ -1,4 +1,4 @@
-jQuery(function() {
+;(function() {
 
     /*-------------------------------------------------*/
     /* =  preloader
@@ -13,15 +13,10 @@ jQuery(function() {
     /*-------------------------------------------------*/
     /* =  fonts
     /*-------------------------------------------------*/
-    $("head").append("<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:300,700,100,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>");
+    $("head").append("<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:300,700,100,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet'>");
 
-
-    /*-------------------------------------------------*/
-    /* =  placeholder
-    /*-------------------------------------------------*/
-    jQuery('input[placeholder], textarea[placeholder]').placeholder();
-
-
+	
+	
     /*-------------------------------------------------*/
     /* =  inputmask
     /*-------------------------------------------------*/
@@ -119,4 +114,4 @@ jQuery(function() {
         'scrolling': 'no'
     });
 
-});
+})();
