@@ -1,0 +1,130 @@
+/*-------------------------------------------------*/
+/* =  basic.begin
+/*-------------------------------------------------*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, 
+body{
+	overflow-x: hidden;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    font-size: 16px;
+    line-height: 1.25;    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, select, button, textarea {
+    font-family: 'Segoe UI', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    outline: none;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+a {
+    color: #287fc3;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+a:focus, a:active {
+    color: #f00;
+    text-decoration: underline;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {color: #999;}
+input::-moz-placeholder, textarea::-moz-placeholder {color: #999;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color: #999;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #999;}
+
+p {
+    margin: 10px 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto\9; /*ie8*/
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+.wrap {
+    max-width: 1024px;
+    padding: 24px 12px;
+    margin: 0 auto;
+}
+/*-------------------------------------------------*/
+/* =  basic.end
+/*-------------------------------------------------*/

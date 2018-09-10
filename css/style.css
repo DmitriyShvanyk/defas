@@ -1,342 +1,7 @@
-/*-------------------------------------------------*/
-/* =  fonts.begin
-/*-------------------------------------------------*/
+@import url('fonts.css');
+@import url('reset.css');
+@import url('basic.css');
 
-@font-face {
-    font-family: 'GothamPro-Black';
-    src: url('../fonts/GothamPro-Black_gdi.eot');
-    src: url('../fonts/GothamPro-Black_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Black_gdi.woff') format('woff'), url('../fonts/GothamPro-Black_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Black_gdi.svg#GothamPro-Black') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-BlackItalic';
-    src: url('../fonts/GothamPro-BlackItalic_gdi.eot');
-    src: url('../fonts/GothamPro-BlackItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-BlackItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-BlackItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-BlackItalic_gdi.svg#GothamPro-BlackItalic') format('svg');
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-Bold';
-    src: url('../fonts/GothamPro-Bold_gdi.eot');
-    src: url('../fonts/GothamPro-Bold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold_gdi.woff') format('woff'), url('../fonts/GothamPro-Bold_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Bold_gdi.svg#GothamPro-Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-BoldItalic';
-    src: url('../fonts/GothamPro-BoldItalic_gdi.eot');
-    src: url('../fonts/GothamPro-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-BoldItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-BoldItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-BoldItalic_gdi.svg#GothamPro-BoldItalic') format('svg');
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-Italic';
-    src: url('../fonts/GothamPro-Italic_gdi.eot');
-    src: url('../fonts/GothamPro-Italic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Italic_gdi.woff') format('woff'), url('../fonts/GothamPro-Italic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Italic_gdi.svg#GothamPro-Italic') format('svg');
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-Light';
-    src: url('../fonts/GothamPro-Light_gdi.eot');
-    src: url('../fonts/GothamPro-Light_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light_gdi.woff') format('woff'), url('../fonts/GothamPro-Light_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Light_gdi.svg#GothamPro-Light') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-LightItalic';
-    src: url('../fonts/GothamPro-LightItalic_gdi.eot');
-    src: url('../fonts/GothamPro-LightItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-LightItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-LightItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-LightItalic_gdi.svg#GothamPro-LightItalic') format('svg');
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-Medium';
-    src: url('../fonts/GothamPro-Medium_gdi.eot');
-    src: url('../fonts/GothamPro-Medium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium_gdi.woff') format('woff'), url('../fonts/GothamPro-Medium_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Medium_gdi.svg#GothamPro-Medium') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-MediumItalic';
-    src: url('../fonts/GothamPro-MediumItalic_gdi.eot');
-    src: url('../fonts/GothamPro-MediumItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-MediumItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-MediumItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-MediumItalic_gdi.svg#GothamPro-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamProNarrow-Bold';
-    src: url('../fonts/GothamProNarrow-Bold_gdi.eot');
-    src: url('../fonts/GothamProNarrow-Bold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProNarrow-Bold_gdi.woff') format('woff'), url('../fonts/GothamProNarrow-Bold_gdi.ttf') format('truetype'), url('../fonts/GothamProNarrow-Bold_gdi.svg#GothamProNarrow-Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamProNarrow-Medium';
-    src: url('../fonts/GothamProNarrow-Medium_gdi.eot');
-    src: url('../fonts/GothamProNarrow-Medium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProNarrow-Medium_gdi.woff') format('woff'), url('../fonts/GothamProNarrow-Medium_gdi.ttf') format('truetype'), url('../fonts/GothamProNarrow-Medium_gdi.svg#GothamProNarrow-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'GothamPro-Regular';
-    src: url('../fonts/GothamPro_gdi.eot');
-    src: url('../fonts/GothamPro_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro_gdi.woff') format('woff'), url('../fonts/GothamPro_gdi.ttf') format('truetype'), url('../fonts/GothamPro_gdi.svg#GothamPro-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-/*-------------------------------------------------*/
-/* =  fonts.end
-/*-------------------------------------------------*/
-
-
-/*-------------------------------------------------*/
-/* =  reset.css.begin
-/*-------------------------------------------------*/
-
-a, button, input, select, textarea {
-    margin: 0;
-    font-size: 100%
-}
-
-a, input[type=text], input[type=password], textarea {
-    padding: 0
-}
-
-abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: 0 0;
-    font-size: 100%
-}
-
-a {
-    vertical-align: baseline;
-    background: 0 0
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-td, td img {
-    vertical-align: top
-}
-
-sub, sup {
-    font-size: smaller
-}
-
-input[type=checkbox] {
-    vertical-align: bottom
-}
-
-input[type=radio] {
-    vertical-align: text-bottom
-}
-
-sub {
-    vertical-align: sub
-}
-
-sup {
-    vertical-align: super
-}
-
-ol, ul {
-    list-style: none
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block
-}
-/*-------------------------------------------------*/
-/* =  reset.css.end
-/*-------------------------------------------------*/
-
-
-/*-------------------------------------------------*/
-/* =  basic.begin
-/*-------------------------------------------------*/
-
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    background: #fff;
-    color: #000;
-    text-align: left;
-    font-family: 'Segoe UI', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-}
-
-input, select, button, textarea {
-    font-family: 'Segoe UI', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-    outline: none;
-}
-
-input[type="button"], input[type="submit"], input[type="reset"], button {
-    cursor: pointer;
-    -webkit-appearance: button;
-}
-
-label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-input[type="search"] {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    -webkit-appearance: textfield;
-}
-
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-}
-
-textarea {
-    overflow: auto;
-    vertical-align: top;
-}
-
-abbr[title] {
-    border-bottom: 1px dotted;
-}
-
-a {
-    color: #287fc3;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #f00;
-    text-decoration: none;
-}
-
-a:focus, a:active {
-    color: #f00;
-    text-decoration: underline;
-}
-
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color: #999999;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #999999;
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: #999999;
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #999999;
-}
-
-p {
-    margin: 10px 0;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-    width: auto\9; /*ie8*/
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-.clearfix:before, .clearfix:after {
-    display: table;
-    line-height: 0;
-    content: "";
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.wrap {
-    max-width: 1024px;
-    padding: 24px 12px 24px;
-    margin: 0 auto;
-}
-/*-------------------------------------------------*/
-/* =  basic.end
-/*-------------------------------------------------*/
 
 
 /*-------------------------------------------------*/
@@ -366,8 +31,6 @@ img {
 .menu>li {
     text-align: center;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: middle;
     margin: 0 7px;
     padding: 26px 10px 28px;
@@ -565,8 +228,6 @@ img {
     font-family: "Segoe UI", sans-serif;
     font-size: 20px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid #BBB9B9;
@@ -647,8 +308,6 @@ h1 {
 
 h1 span {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     font-size: 25px;
     font-weight: 600;
     font-family: "Segoe UI", sans-serif;
@@ -835,8 +494,6 @@ h2>span {
 .list-why>li {
     text-align: left;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: top;
     width: 50%;
     padding: 0 25px;
@@ -1102,8 +759,6 @@ h2>span {
 .b-gallery>ul>li {
     text-align: center;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: top;
     width: 20%;
     padding: 0 6px;
@@ -1170,8 +825,6 @@ h2>span {
 
 .b-swf-item {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     text-align: center;
     font-size: 22px;
     text-decoration: none;
@@ -1235,8 +888,6 @@ h2>span {
 
 .list-colors>li {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: top;
     width: 25%;
     padding: 0 10px;
@@ -1252,8 +903,6 @@ h2>span {
 
 [id^=colors-]+label {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     position: relative;
 }
 
@@ -1385,8 +1034,6 @@ h2>span {
 
 [id^=house-]+label {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     position: relative;
     font-size: 20px;
     color: #403934;
@@ -1406,8 +1053,6 @@ h2>span {
 
 [id^=house-]+label .i {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: middle;
     margin: -10px 15px 0;
 }
@@ -1467,8 +1112,6 @@ h2>span {
     border: 2px solid #D3CFC7;
     font-size: 25px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
 }
 
 .b-plunder {
@@ -1501,8 +1144,6 @@ h2>span {
     border: 2px solid #D3CFC7;
     font-size: 22px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     text-align: center;
     line-height: 46px;
 }
@@ -1745,8 +1386,6 @@ h2>span {
     text-align: center;
     max-width: 420px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     border: 3px solid #D3CFC7;
     padding: 15px 50px 0;
     position: relative;
@@ -1931,8 +1570,6 @@ footer {}
 
 .create {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     font-size: 13px;
     color: #403934;
     text-decoration: none;
@@ -2288,8 +1925,6 @@ form label.error {
 .list-form-inline>li {
     text-align: left;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     vertical-align: middle;
     width: 33.333333333333333%;
     padding: 0 15px;
@@ -2757,8 +2392,6 @@ form label.error {
     padding: 0 6% 5px;
     margin-top: -40px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     position: relative;
     top: -7px;
 }

@@ -1,0 +1,126 @@
+/*-------------------------------------------------*/
+/* =  fonts.begin
+/*-------------------------------------------------*/
+
+@font-face {
+    font-family: 'GothamPro-Black';
+    src: url('../fonts/GothamPro-Black_gdi.eot');
+    src: url('../fonts/GothamPro-Black_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Black_gdi.woff') format('woff'), url('../fonts/GothamPro-Black_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Black_gdi.svg#GothamPro-Black') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-BlackItalic';
+    src: url('../fonts/GothamPro-BlackItalic_gdi.eot');
+    src: url('../fonts/GothamPro-BlackItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-BlackItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-BlackItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-BlackItalic_gdi.svg#GothamPro-BlackItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url('../fonts/GothamPro-Bold_gdi.eot');
+    src: url('../fonts/GothamPro-Bold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold_gdi.woff') format('woff'), url('../fonts/GothamPro-Bold_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Bold_gdi.svg#GothamPro-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-BoldItalic';
+    src: url('../fonts/GothamPro-BoldItalic_gdi.eot');
+    src: url('../fonts/GothamPro-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-BoldItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-BoldItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-BoldItalic_gdi.svg#GothamPro-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-Italic';
+    src: url('../fonts/GothamPro-Italic_gdi.eot');
+    src: url('../fonts/GothamPro-Italic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Italic_gdi.woff') format('woff'), url('../fonts/GothamPro-Italic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Italic_gdi.svg#GothamPro-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url('../fonts/GothamPro-Light_gdi.eot');
+    src: url('../fonts/GothamPro-Light_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light_gdi.woff') format('woff'), url('../fonts/GothamPro-Light_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Light_gdi.svg#GothamPro-Light') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-LightItalic';
+    src: url('../fonts/GothamPro-LightItalic_gdi.eot');
+    src: url('../fonts/GothamPro-LightItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-LightItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-LightItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-LightItalic_gdi.svg#GothamPro-LightItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url('../fonts/GothamPro-Medium_gdi.eot');
+    src: url('../fonts/GothamPro-Medium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium_gdi.woff') format('woff'), url('../fonts/GothamPro-Medium_gdi.ttf') format('truetype'), url('../fonts/GothamPro-Medium_gdi.svg#GothamPro-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-MediumItalic';
+    src: url('../fonts/GothamPro-MediumItalic_gdi.eot');
+    src: url('../fonts/GothamPro-MediumItalic_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-MediumItalic_gdi.woff') format('woff'), url('../fonts/GothamPro-MediumItalic_gdi.ttf') format('truetype'), url('../fonts/GothamPro-MediumItalic_gdi.svg#GothamPro-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamProNarrow-Bold';
+    src: url('../fonts/GothamProNarrow-Bold_gdi.eot');
+    src: url('../fonts/GothamProNarrow-Bold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProNarrow-Bold_gdi.woff') format('woff'), url('../fonts/GothamProNarrow-Bold_gdi.ttf') format('truetype'), url('../fonts/GothamProNarrow-Bold_gdi.svg#GothamProNarrow-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamProNarrow-Medium';
+    src: url('../fonts/GothamProNarrow-Medium_gdi.eot');
+    src: url('../fonts/GothamProNarrow-Medium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProNarrow-Medium_gdi.woff') format('woff'), url('../fonts/GothamProNarrow-Medium_gdi.ttf') format('truetype'), url('../fonts/GothamProNarrow-Medium_gdi.svg#GothamProNarrow-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'GothamPro-Regular';
+    src: url('../fonts/GothamPro_gdi.eot');
+    src: url('../fonts/GothamPro_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro_gdi.woff') format('woff'), url('../fonts/GothamPro_gdi.ttf') format('truetype'), url('../fonts/GothamPro_gdi.svg#GothamPro-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+/*-------------------------------------------------*/
+/* =  fonts.end
+/*-------------------------------------------------*/
