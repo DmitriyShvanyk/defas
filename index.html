@@ -33,58 +33,59 @@
 	</div>
 	<!--preloader.end-->
 
-	<!--menu.begin-->
-	<nav id="nav" class="default clearfix">
-		<div id="btn-menu">
+	<!--navbar.begin-->
+	<nav class="navbar">
+		<div class="navbar__hamburger">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<ul class="menu">
-			<li class="active"><a href="#b1" class="b-menu-link">Задумайтесь о безопасности</a></li>
-			<li><a href="#b2" class="b-menu-link">О нашей системе</a></li>
-			<li><a href="#b3" class="b-menu-link">Выберите цвет</a></li>
-			<li><a href="#b4" class="b-menu-link">Рассчитать</a></li>
-			<li><a href="#b5" class="b-menu-link">Убедитесь в безопасности</a></li>
-			<li><a href="#b6" class="b-menu-link">Отзывы</a></li>
-			<li><a href="#b7" class="b-menu-link">Контакты</a></li>
+		<ul class="navbar__menu">
+			<li class="navbar__menu-item active"><a href="#b1" class="navbar__menu-link">Задумайтесь о безопасности</a></li>
+			<li class="navbar__menu-item"><a href="#b2" class="navbar__menu-link">О нашей системе</a></li>
+			<li class="navbar__menu-item"><a href="#b3" class="navbar__menu-link">Выберите цвет</a></li>
+			<li class="navbar__menu-item"><a href="#b4" class="navbar__menu-link">Рассчитать</a></li>
+			<li class="navbar__menu-item"><a href="#b5" class="navbar__menu-link">Убедитесь в безопасности</a></li>
+			<li class="navbar__menu-item"><a href="#b6" class="navbar__menu-link">Отзывы</a></li>
+			<li class="navbar__menu-item"><a href="#b7" class="navbar__menu-link">Контакты</a></li>
 		</ul>
 	</nav>
-	<!--menu.end-->
+	<!--navbar.end-->
 
 	<!--header.begin-->
-	<header>
-		<div class="wrap wrap-h">
-			<div class="b-top">
-				<div class="b-top-item b-top-item-1">
-					<a href="/" class="b-logo">Производство и продажа защиты для окон дома от воров</a>
-				</div>
-				<div class="b-top-item b-top-item-2">
-					<p class="b-tel">+7968 060 82 83</p>
-					<a href="#popup-app" class="b-order-call modalbox">Заказать звонок</a>
+	<header class="header">
+		<div class="wrap">
+			
+			<div class="header__topbar">
+				<a href="/" class="header__logo">
+					Производство и продажа защиты для окон дома от воров
+				</a>
+				<div class="header__support">
+					<a href="tel:79680608283" class="header__tel">+7968 060 82 83</a>
+					<a href="#popup-app" class="btn-order-call modalbox">Заказать звонок</a>
 				</div>
 			</div>
 
-			<div class="b-header-inner">
-				<h1>Защити окна своего дома от взлома<br>системой «Defas»<br>
-					<span>Заполните форму и получите презентацию<br>«Как защитить свой дом от ограбления»</span>
+			<div class="header__inner">
+				<h1 class="header__title">Защити окна своего дома от взлома<br> системой «Defas»<br>
+					<span>Заполните форму и получите презентацию<br> «Как защитить свой дом от ограбления»</span>
 				</h1>
 
 				<div class="b-form-h">
 					<div id="target-form"></div>
 					<form id="form" method="post" action="php/form.php">
 						<div class="b-form-item">
-							<label>Ваше имя</label>
-							<input type="text" name="fname" placeholder="Введите Ваше имя" />
+							<label for="fname">Ваше имя</label>
+							<input type="text" id="fname" name="fname" placeholder="Введите Ваше имя" required>
 						</div>
 						<div class="b-form-item">
-							<label>Контактный телефон</label>
-							<input type="tel" name="phone" class="field_phone" placeholder="+7 (___) ___ - __ - __" />
+							<label for="phone">Контактный телефон</label>
+							<input type="tel" name="phone" id="phone" class="field_phone" placeholder="+7 (___) ___ - __ - __" required>
 						</div>
 						<div class="b-form-item">
-							<label>E-mail</label>
-							<input type="text" name="email" placeholder="Введите e-mail" />
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email" placeholder="Введите e-mail" required>
 						</div>
 						<div class="b-form-item">
 							<button type="submit" class="btn-submit">Получить</button>
@@ -603,7 +604,7 @@
 
 	<!--scripts.begin-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/active_menu.js"></script>
+	<script src="js/menu.scroll.active.js"></script>
 	<script src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	<script src="js/jquery.inputmask.js"></script>

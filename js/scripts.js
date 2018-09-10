@@ -14,7 +14,6 @@
     /* =  fonts
     /*-------------------------------------------------*/
     $("head").append("<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:300,700,100,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet'>");
-
 	
 	
     /*-------------------------------------------------*/
@@ -23,35 +22,40 @@
     $(".field_phone").inputmask("+7 (999) 999-99-99");
 
 
-
     /*-------------------------------------------------*/
-    /* =  checked
+    /* =  navbar
     /*-------------------------------------------------*/
-    $('input:checked').addClass("selected");
-    $('input').change(function() {
-        $('input:not(:checked)').removeClass("selected");
-        $(this).addClass("selected");
-    });
+    
+	var navbar = document.querySelector('.navbar');
+	var scrollY;
+	
+	window.addEventListener('scroll', function(){
+		
+		scrollY = window.scrollY;
+		
+		if(scrollY > 300){
+			navbar.classList.add('navbar--fixed');
+		}
+		else{
+			navbar.classList.remove('navbar--fixed');
+		}
+		
+	});	
+	
+	
+	function showNavbarMobile(){
+		var navbarHamburger = document.querySelector('.navbar__hamburger');
+		var navbarMenu = document.querySelector('.navbar__menu');	
+		
+		navbarHamburger.addEventListener('click', function(){			
+			this.classList.toggle('navbar__hamburger--open');
+			navbarMenu.classList.toggle('navbar__menu--open');
+		});	
+	}
+	showNavbarMobile();
+	
 
-
-
-    /*-------------------------------------------------*/
-    /* =  menu
-    /*-------------------------------------------------*/
-    var $menu = $("#nav");
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 300 && $menu.hasClass("default")) {
-            $menu.fadeIn(200).removeClass("default").addClass("fixed");
-        } else if ($(this).scrollTop() <= 300 && $menu.hasClass("fixed")) {
-            $menu.fadeOut(0).removeClass("fixed").addClass("default");
-        }
-    });
-
-    $('#btn-menu').click(function() {
-        $(this).toggleClass('open');
-        $('.menu').toggleClass('menu-open');
-    });
+   
 
 
     /*-------------------------------------------------*/

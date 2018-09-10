@@ -1,7 +1,7 @@
 var lastId,
-    topMenu = $("#nav"),
+    topMenu = $(".navbar"),
     topMenuHeight = topMenu.outerHeight() + 0,
-    menuItems = topMenu.find(".b-menu-link"),
+    menuItems = topMenu.find(".navbar__menu-link"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function() {
         var item = $($(this).attr("href"));
