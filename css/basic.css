@@ -125,6 +125,55 @@ img {
     padding: 24px 12px;
     margin: 0 auto;
 }
+.wrap770 {
+    max-width: 770px;
+    margin: 0 auto;
+}
+.wrap640 {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe, 
+.video object, 
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.list-bullet {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.list-bullet>li {
+    padding-left: 20px;
+    position: relative;
+    margin: 8px 0;
+}
+
+.list-bullet>li:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: #555;
+    border-radius: 50%;
+}
 /*-------------------------------------------------*/
 /* =  basic.end
 /*-------------------------------------------------*/

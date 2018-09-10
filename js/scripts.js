@@ -19,29 +19,30 @@
     /*-------------------------------------------------*/
     /* =  inputmask
     /*-------------------------------------------------*/
-    $(".field_phone").inputmask("+7 (999) 999-99-99");
+    $(".form__control--phone").inputmask("+7 (999) 999-99-99");
 
 
     /*-------------------------------------------------*/
     /* =  navbar
     /*-------------------------------------------------*/
-    
-	var navbar = document.querySelector('.navbar');
-	var scrollY;
-	
-	window.addEventListener('scroll', function(){
+    function scrollNavbar(){
+		var navbar = document.querySelector('.navbar');
+		var scrollY;
 		
-		scrollY = window.scrollY;
-		
-		if(scrollY > 300){
-			navbar.classList.add('navbar--fixed');
-		}
-		else{
-			navbar.classList.remove('navbar--fixed');
-		}
-		
-	});	
-	
+		window.addEventListener('scroll', function(){
+			
+			scrollY = window.scrollY;
+			
+			if(scrollY > 300){
+				navbar.classList.add('navbar--fixed');
+			}
+			else{
+				navbar.classList.remove('navbar--fixed');
+			}
+			
+		});	
+	}
+	scrollNavbar();	
 	
 	function showNavbarMobile(){
 		var navbarHamburger = document.querySelector('.navbar__hamburger');
@@ -53,9 +54,7 @@
 		});	
 	}
 	showNavbarMobile();
-	
-
-   
+	   
 
 
     /*-------------------------------------------------*/

@@ -1,6 +1,7 @@
 @import url('fonts.css');
 @import url('reset.css');
 @import url('basic.css');
+@import url('typography.css');
 @import url('navbar.css');
 @import url('header.css');
 
@@ -61,49 +62,7 @@
 /* =  conten.begin
 /*-------------------------------------------------*/
 
-h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    line-height: 1.286;
-    text-align: center;
-    font-family: 'GothamPro-Black', sans-serif;
-    margin: 25px 0;
-}
 
-h2>span {
-    font-size: 28px;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: 400;
-    display: block;
-    margin: 10px 0;
-}
-
-.h2 {
-    color: #403934;
-    margin-bottom: 50px;
-}
-
-.h2b {
-    color: #403934;
-}
-
-@media screen and (max-width: 767px) {
-    h2 {
-        font-size: 30px;
-    }
-    h2>span {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    h2 {
-        font-size: 24px;
-    }
-    h2>span {
-        font-size: 18px;
-    }
-}
 
 .bg-why {
     min-height: 1050px;
@@ -117,15 +76,31 @@ h2>span {
     max-width: 1080px;
 }
 
-.i-chevron {
-    background: url('../img/sprites.png') no-repeat -22px -19px;
-    width: 44px;
+.i-chevron {    
+    width: 32px;
     height: 32px;
-    margin: 25px auto;
+    margin: 0 auto 25px auto;
+	border: 10px solid #F8C856;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg);
+	animation: pulseChevron 1.5s linear infinite;
+}
+@keyframes pulseChevron{
+	0%{
+		transform: translateY(15px) rotate(45deg);
+	}
+	50%{
+		transform: translateY(0px) rotate(45deg);
+	}
+	100%{
+		transform: translateY(15px) rotate(45deg);
+	}
 }
 
 .list-why {
     text-align: center;
+	font-size: 0;
 }
 
 .list-why>li {
@@ -208,25 +183,9 @@ h2>span {
     padding: 50px 15px 70px;
 }
 
-.wrap640 {
-    max-width: 640px;
-    margin: 0 auto;
-}
 
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
 
-.video iframe, .video object, .video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
 .bg-gray {
     background: #F1EDE8;
@@ -838,10 +797,7 @@ h2>span {
     margin: 40px auto 40px auto;
 }
 
-.wrap770 {
-    max-width: 770px;
-    margin: 0 auto;
-}
+
 
 .wrap770 .video {
     padding-bottom: 50%;
@@ -1325,14 +1281,15 @@ form label {
     padding: 0;
 }
 
-form input[type="text"], form input[type="email"], form input[type="tel"], form textarea, .btn-submit {
+.form__control, 
+.form__submit {
     display: block;
     width: 100%;
     border: none;
     text-align: center;
 }
 
-form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
+.form__control {
     color: #000;
     font-size: 18px;
     height: 55px;
@@ -1341,62 +1298,51 @@ form input[type="text"], form input[type="email"], form input[type="tel"], form 
     transition: 0.1s;
 }
 
-form textarea {
+.form__control--textarea {
     height: 100px;
     overflow: auto;
 }
 
-form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form textarea:focus {
-    border: 2px solid #4169E1;
+.form__control:focus {
+    box-shadow: 0 0 0 2px #4169E1;
 }
 
-form input:-moz-placeholder, form textarea:-moz-placeholder {
+.form__control:-moz-placeholder {
+    color: #888;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.form__control::-moz-placeholder {
+    color: #888;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.form__control:-ms-input-placeholder {
+    color: #888;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.form__control::-webkit-input-placeholder {
     color: #888;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
-form input::-moz-placeholder, form textarea::-moz-placeholder {
-    color: #888;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.form__control:focus:-moz-placeholder {
+    opacity: 0;
 }
-
-form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-    color: #888;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.form__control:focus::-moz-placeholder {
+    opacity: 0;
 }
-
-form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-    color: #888;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.form__control:focus:-ms-input-placeholder {
+    opacity: 0;
 }
-
-form input:focus:-moz-placeholder, form textarea:focus:-moz-placeholder {
+.form__control:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 
-form input:focus::-moz-placeholder, form textarea:focus::-moz-placeholder {
-    opacity: 0;
-}
 
-form input:focus:-ms-input-placeholder, form textarea:focus:-ms-input-placeholder {
-    opacity: 0;
-}
-
-form input:focus::-webkit-input-placeholder, form textarea:focus::-webkit-input-placeholder {
-    opacity: 0;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-     ::i-block-chrome, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-        text-indent: 50px;
-    }
-}
-
-.btn-submit {
+.form__submit {
     text-align: center;
     font-size: 30px;
     line-height: 1;
@@ -1409,119 +1355,68 @@ form input:focus::-webkit-input-placeholder, form textarea:focus::-webkit-input-
     margin: 20px auto 15px auto;
     border-bottom: 5px solid #E14F01;
     -webkit-appearance: none;
-    background: rgb(255, 169, 35);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 169, 35, 1) 0%, rgba(255, 138, 18, 1) 50%, rgba(255, 112, 2, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 169, 35, 1) 0%, rgba(255, 138, 18, 1) 50%, rgba(255, 112, 2, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 169, 35, 1) 0%, rgba(255, 138, 18, 1) 50%, rgba(255, 112, 2, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa923', endColorstr='#ff7002', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 169, 35);    
+    background: linear-gradient(to bottom, rgba(255, 169, 35, 1) 0%, rgba(255, 138, 18, 1) 50%, rgba(255, 112, 2, 1) 100%);   
     border-radius: 40px;
     box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.2);
 }
 
-.btn-submit:hover {
+.form__submit:hover {
     border-bottom: 5px solid #E1682D;
-    background: rgb(255, 196, 104);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 196, 104, 1) 0%, rgba(255, 169, 83, 1) 50%, rgba(255, 147, 67, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 196, 104, 1) 0%, rgba(255, 169, 83, 1) 50%, rgba(255, 147, 67, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 196, 104, 1) 0%, rgba(255, 169, 83, 1) 50%, rgba(255, 147, 67, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc468', endColorstr='#ff9343', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 196, 104);    
+    background: linear-gradient(to bottom, rgba(255, 196, 104, 1) 0%, rgba(255, 169, 83, 1) 50%, rgba(255, 147, 67, 1) 100%);    
 }
 
-.btn-submit:focus, .btn-submit:active {
+.form__submit:focus, .form__submit:active {
     background: #FF6F02;
 }
 
-.btn-submit-2 {
+.form__submit-2 {
     font-size: 23px;
     text-shadow: none;
     text-transform: none;
     font-weight: 400;
     color: #000;
     border-bottom: 5px solid #EBCC22;
-    background: rgb(255, 234, 116);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea74', endColorstr='#ffe034', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 234, 116);   
+    background: linear-gradient(to bottom, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);    
 }
 
-.btn-submit-2:hover {
+.form__submit-2:hover {
     border-bottom: 5px solid #EBA92A;
-    background: rgb(255, 225, 60);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe13c', endColorstr='#ffae3c', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 225, 60);   
+    background: linear-gradient(to bottom, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);    
 }
 
-.btn-submit-2:focus, .btn-submit-2:active {
+.form__submit-2:focus, .form__submit-2:active {
     background: rgb(255, 174, 60);
 }
 
-.btn-submit-3 {
+.form__submit-3 {
     padding: 19px 10px;
     font-size: 25px;
     text-shadow: none;
     color: #403934;
     border-bottom: 5px solid #EBCC22;
-    background: rgb(255, 234, 116);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea74', endColorstr='#ffe034', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 234, 116);    
+    background: linear-gradient(to bottom, rgba(255, 234, 116, 1) 0%, rgba(255, 228, 82, 1) 50%, rgba(255, 224, 52, 1) 100%);   
 }
 
-.btn-submit-3:hover {
+.form__submit-3:hover {
     border-bottom: 5px solid #EBA92A;
-    background: rgb(255, 225, 60);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe13c', endColorstr='#ffae3c', GradientType=0);
-    /* IE6-9 */
+    background: rgb(255, 225, 60);   
+    background: linear-gradient(to bottom, rgba(255, 225, 60, 1) 0%, rgba(255, 199, 60, 1) 50%, rgba(255, 174, 60, 1) 100%);   
 }
 
-.btn-submit-3:focus, .btn-submit-3:active {
+.form__submit-3:focus, .form__submit-3:active {
     background: rgb(255, 174, 60);
 }
 
 
-/*hack css for ie9*/
 
-:root .btn-submit {
-    border-radius: 0px\9;
-}
-
-form input[type="text"].error, form input[type="tel"].error, form textarea.error {
+form input[type="text"].error, 
+form input[type="tel"].error, 
+form textarea.error {
     outline: 0;
     border: 2px solid #FF261B;
 }
@@ -1567,7 +1462,9 @@ form label.error {
     padding: 0 15px;
 }
 
-.list-form-inline>li input[type="text"], .list-form-inline>li input[type="email"], .list-form-inline>li input[type="tel"] {
+.list-form-inline>li input[type="text"], 
+.list-form-inline>li input[type="email"], 
+.list-form-inline>li input[type="tel"] {
     height: 65px;
 }
 
@@ -1575,11 +1472,15 @@ form label.error {
     margin-top: 40px;
 }
 
-.list-form-inline-2>li input[type="text"], .list-form-inline-2>li input[type="email"], .list-form-inline-2>li input[type="tel"] {
+.list-form-inline-2>li input[type="text"], 
+.list-form-inline-2>li input[type="email"], 
+.list-form-inline-2>li input[type="tel"] {
     background: #F1EDE8;
 }
 
-.list-form-inline-2>li input[type="text"]:focus, .list-form-inline-2>li input[type="email"]:focus, .list-form-inline-2>li input[type="tel"]:focus {
+.list-form-inline-2>li input[type="text"]:focus, 
+.list-form-inline-2>li input[type="email"]:focus, 
+.list-form-inline-2>li input[type="tel"]:focus {
     background: #fff;
 }
 
@@ -1590,16 +1491,8 @@ form label.error {
         height: auto;
         border: 20px solid #FAFAFC;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        background: rgb(204, 204, 206);
-        /* Old browsers */
-        background: -moz-linear-gradient(-45deg, rgba(204, 204, 206, 1) 0%, rgba(222, 222, 224, 1) 50%, rgba(232, 233, 237, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg, rgba(204, 204, 206, 1) 0%, rgba(222, 222, 224, 1) 50%, rgba(232, 233, 237, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg, rgba(204, 204, 206, 1) 0%, rgba(222, 222, 224, 1) 50%, rgba(232, 233, 237, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccccce', endColorstr='#e8e9ed', GradientType=1);
-        /* IE6-9 fallback on horizontal gradient */
+        background: rgb(204, 204, 206);       
+        background: linear-gradient(135deg, rgba(204, 204, 206, 1) 0%, rgba(222, 222, 224, 1) 50%, rgba(232, 233, 237, 1) 100%);        
     }
     .b-form-h form {
         padding: 15px 20px 10px;
@@ -1613,7 +1506,7 @@ form label.error {
         font-size: 16px;
         height: 45px;
     }
-    .btn-submit {
+    .form__submit {
         font-size: 20px;
     }
     .bg-form {
@@ -1634,14 +1527,22 @@ form label.error {
 }
 
 
+
+
 /*-------------------------------------------------*/
 /* =  fancyBox v2.1.5.begin
 /*-------------------------------------------------*/
 
-
-/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
-
-.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
+.fancybox-wrap, 
+.fancybox-skin, 
+.fancybox-outer, 
+.fancybox-inner, 
+.fancybox-image, 
+.fancybox-wrap iframe, 
+.fancybox-wrap object, 
+.fancybox-nav, 
+.fancybox-nav span, 
+.fancybox-tmp {
     padding: 0;
     margin: 0;
     border: 0;
@@ -1668,7 +1569,8 @@ form label.error {
 
 .fancybox-opened .fancybox-skin {}
 
-.fancybox-outer, .fancybox-inner {
+.fancybox-outer, 
+.fancybox-inner {
     position: relative;
 }
 
@@ -1688,7 +1590,8 @@ form label.error {
     white-space: nowrap;
 }
 
-.fancybox-image, .fancybox-iframe {
+.fancybox-image, 
+.fancybox-iframe {
     display: block;
     width: 100%;
     height: 100%;
@@ -1699,7 +1602,10 @@ form label.error {
     max-height: 100%;
 }
 
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+#fancybox-loading, 
+.fancybox-close, 
+.fancybox-prev span, 
+.fancybox-next span {
     background-image: url('../fancybox/fancybox_sprite.png');
 }
 
@@ -1872,9 +1778,7 @@ form label.error {
     padding: 2px 20px;
     background: transparent;
     /* Fallback for web browsers that doesn't support RGBa */
-    background: rgba(0, 0, 0, 0.8);
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
+    background: rgba(0, 0, 0, .8);    
     border-radius: 15px;
     text-shadow: 0 1px 2px #222;
     color: #FFF;
@@ -1907,7 +1811,9 @@ form label.error {
 /*Retina graphics!*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-    #fancybox-loading, .fancybox-prev span, .fancybox-next span {
+    #fancybox-loading, 
+	.fancybox-prev span, 
+	.fancybox-next span {
         background-image: url('../fancybox/fancybox_sprite@2x.png');
         background-size: 44px 152px;
         /*The size of the normal image, half the size of the hi-res image*/
@@ -2039,11 +1945,15 @@ form label.error {
     padding: 15px 15px 30px;
 }
 
-.b-modal-app form input[type="text"], .b-modal-app form input[type="email"], .b-modal-app form input[type="tel"] {
+.b-modal-app form input[type="text"], 
+.b-modal-app form input[type="email"], 
+.b-modal-app form input[type="tel"] {
     background: #F1EDE8;
 }
 
-.b-modal-app form input[type="text"]:focus, .b-modal-app form input[type="email"]:focus, .b-modal-app form input[type="tel"]:focus {
+.b-modal-app form input[type="text"]:focus, 
+.b-modal-app form input[type="email"]:focus, 
+.b-modal-app form input[type="tel"]:focus {
     background: #fff;
 }
 
@@ -2072,27 +1982,7 @@ form label.error {
     text-align: left;
 }
 
-.list-bullet {
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
 
-.list-bullet>li {
-    padding-left: 20px;
-    position: relative;
-    margin: 8px 0;
-}
-
-.list-bullet>li:before {
-    content: '';
-    position: absolute;
-    top: 7px;
-    left: 0;
-    width: 6px;
-    height: 6px;
-    background: #555;
-    border-radius: 50%;
-}
 
 [id^=thnks] {
     display: none;
@@ -2105,7 +1995,8 @@ form label.error {
     background-size: cover;
 }
 
-[id^=thnks] h3, [id^=thnks] p.subthanks {
+[id^=thnks] h3, 
+[id^=thnks] p.subthanks {
     width: 100%;
     text-align: left!important;
     max-width: 250px;
