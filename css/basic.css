@@ -120,6 +120,11 @@ img {
 
 
 
+.gray {
+    background: #F1EDE8;
+}
+
+
 .wrap {
     max-width: 1024px;
     padding: 24px 12px;
@@ -129,28 +134,30 @@ img {
     max-width: 770px;
     margin: 0 auto;
 }
-.wrap640 {
-    max-width: 640px;
+
+
+
+.video{
+	max-width: 640px;
     margin: 0 auto;
 }
 
-
-.video {
+.video__inner {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
 
-.video iframe, 
-.video object, 
-.video embed {
+.video__iframe{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+
+
 
 
 .list-bullet {
@@ -173,6 +180,31 @@ img {
     height: 6px;
     background: #555;
     border-radius: 50%;
+}
+
+
+
+
+.i-chevron {    
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 25px auto;
+	border: 10px solid #F8C856;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg);
+	animation: pulseChevron 1.5s linear infinite;
+}
+@keyframes pulseChevron{
+	0%{
+		transform: translateY(15px) rotate(45deg);
+	}
+	50%{
+		transform: translateY(0px) rotate(45deg);
+	}
+	100%{
+		transform: translateY(15px) rotate(45deg);
+	}
 }
 /*-------------------------------------------------*/
 /* =  basic.end

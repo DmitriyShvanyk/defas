@@ -5,6 +5,9 @@
 @import url('navbar.css');
 @import url('header.css');
 
+@import url('sections/section-security.css');
+@import url('sections/section-main-video.css');
+@import url('sections/section-video.css');
 
 
 
@@ -58,201 +61,35 @@
 
 
 
-/*-------------------------------------------------*/
-/* =  conten.begin
-/*-------------------------------------------------*/
-
-
-
-.bg-why {
-    min-height: 1050px;
-    background: url('../img/bg/bg-why.png') no-repeat center top;
-    margin-top: -93px;
+.section-form {
+    min-height: 314px;
+    background: url('../img/bg/section-form.jpg') no-repeat center top;
 }
 
-.wrap-why {
-    padding-top: 110px;
-    color: #fff;
-    max-width: 1080px;
+.section-form .wrap {
+    padding: 60px 12px;
+    max-width: 1054px;
 }
 
-.i-chevron {    
-    width: 32px;
-    height: 32px;
-    margin: 0 auto 25px auto;
-	border: 10px solid #F8C856;
-	border-top: none;
-	border-left: none;
-	transform: rotate(45deg);
-	animation: pulseChevron 1.5s linear infinite;
-}
-@keyframes pulseChevron{
-	0%{
-		transform: translateY(15px) rotate(45deg);
-	}
-	50%{
-		transform: translateY(0px) rotate(45deg);
-	}
-	100%{
-		transform: translateY(15px) rotate(45deg);
-	}
-}
-
-.list-why {
-    text-align: center;
-	font-size: 0;
-}
-
-.list-why>li {
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    padding: 0 25px;
-    margin-top: 25px;
-}
-
-.list-why>li.last {
-    width: 100%;
-}
-
-.b-why {
-    display: table;
-    width: 100%;
-    max-width: 475px;
-    margin: 0 auto;
-    border: 1px solid #FFEA76;
-    font-size: 22px;
-    line-height: 1.5;
-    padding: 10px 5px 10px 30px;
-    height: 150px;
-}
-
-.b-why-item {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.b-why-item .span-1 {
-    color: #F8C856;
-}
-
-.b-why-item .span-2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1;
-}
-
-.list-why>li.last .b-why {
-    max-width: 1000px;
-    text-align: center;
-    height: 90px;
-}
-
-@media screen and (max-width: 900px) {
-    .b-why-item {
-        font-size: 18px;
-    }
-    .b-why-item .span-2 {
-        font-size: 30px;
-    }
+.section-form .wrap h2 {
+    color: #FFEA76;
+    font-size: 28px;
 }
 
 @media screen and (max-width: 767px) {
-    .bg-why {
-        margin-top: 0;
-        min-height: 859px;
-        background: url('../img/bg/bg-why-mob.jpg') no-repeat center top;
+    
+	.section-form{        
         -webkit-background-size: cover;
         background-size: cover;
     }
-    .wrap-why {
-        padding: 40px 15px;
-    }
-    .list-why>li {
-        width: 100%;
-        padding: 0;
-    }
-    .list-why>li .b-why, .list-why>li.last .b-why {
-        height: 90px;
-        max-width: 475px;
-    }
-}
-
-.wrap-video {
-    padding: 50px 15px 70px;
+	
 }
 
 
 
 
 
-.bg-gray {
-    background: #F1EDE8;
-}
 
-.bg-gray .wrap {
-    padding: 70px 12px 60px;
-}
-
-.b-video {}
-
-.b-video-item {
-    border: 4px solid #D3CFC7;
-    border-top: 0;
-    padding: 40px 10px;
-    position: relative;
-    margin-top: 80px;
-}
-
-.b-video-item-first {
-    margin-top: 10px;
-}
-
-.b-video-item:before, .b-video-item:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 17%;
-    height: 4px;
-    background: #D3CFC7;
-}
-
-.b-video-item:before {
-    left: 0;
-}
-
-.b-video-item:after {
-    right: 0;
-}
-
-.b-video-item>h3 {
-    text-align: center;
-    font-size: 27px;
-    color: #403934;
-    font-weight: 400;
-    width: 100%;
-    margin: -55px 0 35px;
-}
-
-@media screen and (max-width: 767px) {
-    .b-video-item:before, .b-video-item:after {
-        width: 5%;
-    }
-    .b-video-item>h3 {
-        padding: 0 5%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .b-video-item {
-        padding: 40px 10px 10px;
-    }
-    .b-video-item>h3 {
-        font-size: 22px;
-        font-weight: 600;
-    }
-}
 
 .wrap-adv {
     padding: 65px 12px;
@@ -1433,20 +1270,10 @@ form label.error {
     text-transform: none;
 }
 
-.bg-form {
-    min-height: 314px;
-    background: url('../img/bg/bg-form.jpg') no-repeat center top;
-}
 
-.bg-form .wrap {
-    padding: 60px 12px 60px;
-    max-width: 1054px;
-}
 
-.bg-form .wrap h2 {
-    color: #FFEA76;
-    font-size: 28px;
-}
+
+
 
 .b-form-inline {}
 
@@ -1508,13 +1335,7 @@ form label.error {
     }
     .form__submit {
         font-size: 20px;
-    }
-    .bg-form {
-        min-height: 314px;
-        background: url('../img/bg/bg-form.jpg') no-repeat center top;
-        -webkit-background-size: cover;
-        background-size: cover;
-    }
+    }    
     .list-form-inline {
         max-width: 400px;
         margin: 0 auto;
